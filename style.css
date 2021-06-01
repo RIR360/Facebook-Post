@@ -3,11 +3,12 @@ body {
 }
 #mother {
     width: 100%;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 .fb-post {
     width: 640px;
     background: lightgray;
     margin: 0 auto;
+    margin-bottom: 20px;
     padding: 10px;
 }
