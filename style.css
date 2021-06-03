@@ -1,14 +1,42 @@
+:root {
+    --prim-color : white;
+    --seco-color : #f0f2f5;
+    --text-dark : #101010;
+    --text-light : #878d93;
+    --spacing-high : 10px;
+    --spacing-low : 5px;
+}
+
 body {
     margin: 0;
+    background: var(--seco-color);
 }
 #mother {
     width: 100%;
-    padding: 50px 0;
+    padding: calc(var(--spacing-high) * 5) 0;
 }
 .fb-post {
     width: 640px;
-    background: lightgray;
+    display: flex;
+    height: 300px;
     margin: 0 auto;
-    margin-bottom: 20px;
-    padding: 10px;
+    flex-direction: column;
+    padding: var(--spacing-high);
+    background: var(--prim-color);
+    margin-bottom: calc(var(--spacing-high) * 2);
 }
+.top-s {
+    flex: 5;
+    background: yellow;
+}
+/*write top section styles here*/
+.like-s {
+    height: 90px;
+    background: blue;
+}
+/*write like section styles here*/
+.comment-s {
+    height: 60px;
+    background: green;
+}
+/*write comment section styles here*/
