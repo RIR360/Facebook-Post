@@ -67,7 +67,25 @@ body {
     border-top: 1px solid var(--border-light);
     border-bottom: 1px solid var(--border-light);
 }
-.like-section .bottom-part * {
-    padding: 5px 45px;
+.like-section .bottom-part .reacts{
+    display: flex;
+    padding: 10px 60px;
+}
+.like-section .bottom-part .reacts span{
+    padding-left: 5px;
+}
+.like-section .bottom-part .comments{
+    display: flex;
+    padding: 10px 60px;
+}
+.like-section .bottom-part .comments span{
+    padding-left: 5px;
+}
+.like-section .bottom-part .shares{
+    display: flex;
+    padding: 10px 60px;
+}
+.like-section .bottom-part .shares span{
+    padding-left: 5px;
 }
 /*write comment section styles here*/
