@@ -40,8 +40,70 @@ body {
 }
 .top-s {
     flex: 5;
-    background: yellow;
+    position: relative;
 }
+.top-info{
+    display: flex;
+    height: 45px;
+
+}
+
+.top-left-part{
+    display: flex;
+}
+
+.profile-picture {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+
+}
+.profile-picture img{
+    border-radius: 50%;
+}
+.profile-name{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 60px;
+    color: var(--text-dark);
+}
+.post-time{
+    display: flex;
+    flex-direction: row;
+    position: absolute;    
+    top: 25px;
+}
+.icon{
+    width: 15px;
+    color: var(--text-light);
+}
+.top-right-part{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    
+}
+.top-right-part button{
+    border: none;
+    background: none;
+
+}
+
+.top-right-part button:hover{
+    cursor: pointer;
+}
+
+.top-post-section{
+    position: absolute;
+    left: 10px;
+    font-size: 25px;
+}
+
 /*write top section styles here*/
 .like-s {
     height: 90px;
