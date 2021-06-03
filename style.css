@@ -3,14 +3,21 @@
     --seco-color : #f0f2f5;
     --text-dark : #101010;
     --text-light : #878d93;
+    --border-light: #a4b0be;
 }
-/*
-spacing high : 10px;
+/* spacing high : 10px;
 spacing low : 5px;
 */
-
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     margin: 0;
+    color: var(--text-dark);
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
     background: var(--seco-color);
 }
 #mother {
@@ -23,13 +30,66 @@ body {
     height: 300px;
     padding: 10px;
     margin: 0 auto;
+    border-radius: 10px;
     margin-bottom: 20px;
     flex-direction: column;
     background: var(--prim-color);
 }
 .top-s {
     flex: 5;
-    background: yellow;
+    position: relative;
+}
+.top-info{
+    display: flex;
+    height: 45px;
+}
+.top-left-part{
+    display: flex;
+}
+.profile-picture {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    left: 10px;
+}
+.profile-picture img{
+    border-radius: 50%;
+}
+.profile-name{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 60px;
+    color: inherit;
+}
+.post-time{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 25px;
+}
+.icon{
+    width: 15px;
+    color: var(--text-light);
+}
+.top-right-part{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+.top-right-part button{
+    border: none;
+    background: none;
+}
+.top-right-part button:hover{
+    cursor: pointer;
+}
+.top-post-section{
+    position: absolute;
+    left: 10px;
+    font-size: 25px;
 }
 /*write top section styles here*/
 .like-s {
@@ -37,8 +97,49 @@ body {
     background: blue;
 }
 /*write like section styles here*/
+.like-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.like-section .top-part{
+    display: flex;
+    flex-direction: row;
+}
+.like-section .top-part .id-name{
+    padding-left: 10px;
+}
+.like-section .bottom-part{
+    margin: 10px 0;
+    display: flex;
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+}
+.like-section .bottom-part .reacts{
+    display: flex;
+    padding: 10px 60px;
+}
+.like-section .bottom-part .reacts span{
+    padding-left: 5px;
+}
+.like-section .bottom-part .comments{
+    display: flex;
+    padding: 10px 60px;
+}
+.like-section .bottom-part .comments span{
+    padding-left: 5px;
+}
+.like-section .bottom-part .shares{
+    display: flex;
+    padding: 10px 60px;
+}
+.like-section .bottom-part .shares span{
+    padding-left: 5px;
+}
+
 .comment-s {
+    background: blue;
     height: 60px;
-    background: green;
 }
 /*write comment section styles here*/
