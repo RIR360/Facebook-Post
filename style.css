@@ -29,7 +29,7 @@ body {
 }
 .top-s {
     flex: 5;
-    background: yellow;
+    position: relative;
 }
 .top-info{
     display: flex;
