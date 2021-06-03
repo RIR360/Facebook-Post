@@ -5,18 +5,10 @@
     --text-light : #878d93;
     --border-light: #a4b0be;
 }
-/* spacing high : 10px;
-spacing low : 5px;
-*/
-*, *::before, *::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
     margin: 0;
     color: var(--text-dark);
-    font-family: 'Lato', sans-serif;
+    font-family: sans-serif;
     font-size: 18px;
     background: var(--seco-color);
 }
@@ -27,114 +19,92 @@ body {
 .fb-post {
     width: 640px;
     display: flex;
-    height: 300px;
-    padding: 10px;
+    padding: 10px 15px;
     margin: 0 auto;
     border-radius: 10px;
     margin-bottom: 20px;
     flex-direction: column;
     background: var(--prim-color);
+    box-sizing: border-box;
 }
 .top-s {
-    flex: 5;
     position: relative;
 }
 .top-info{
     display: flex;
     height: 45px;
-}
-.top-left-part{
-    display: flex;
+    margin-bottom: 10px;
 }
 .profile-picture {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    border: 1px solid black;
-    position: absolute;
-    left: 10px;
+    overflow: hidden;
 }
 .profile-picture img{
-    border-radius: 50%;
+    width: 100%;
 }
-.profile-name{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 60px;
-    color: inherit;
+.top-title {
+    margin-left: 10px;
 }
-.post-time{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 25px;
+.profile-name {
+    font-weight: normal;
+    margin-bottom: 2px;
 }
-.icon{
-    width: 15px;
+.profile-name a {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+.post-time {
+    font-size: 14px;
+}
+.post-time img {
+    cursor: pointer;
+    width: 12px;
     color: var(--text-light);
 }
-.top-right-part{
-    position: absolute;
-    right: 10px;
-    top: 15px;
+.top-options {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
 }
-.top-right-part button{
+.top-options button{
+    width: 30px;
     border: none;
     background: none;
 }
-.top-right-part button:hover{
+.top-options button:hover{
     cursor: pointer;
 }
-.top-post-section{
-    position: absolute;
-    left: 10px;
-    font-size: 25px;
-}
-/*write top section styles here*/
-.like-s {
-    height: 90px;
-    background: blue;
-}
-/*write like section styles here*/
-.like-section{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+.post-content {
     margin-bottom: 10px;
 }
-.like-section .top-part{
+
+/*write like section styles here*/
+.like-section{
+    margin-top: 10px;
+}
+.like-s-top{
     display: flex;
-    flex-direction: row;
 }
-.like-section .top-part .id-name{
+.react-names {
+    display: flex;
+    align-items: center;
     padding-left: 10px;
+    font-size: 14px;
 }
-.like-section .bottom-part{
+.bottom-part {
     margin: 10px 0;
     display: flex;
     border-top: 1px solid var(--border-light);
     border-bottom: 1px solid var(--border-light);
 }
-.like-section .bottom-part .reacts{
+.bottom-part div {
+    cursor: pointer;
     display: flex;
     padding: 10px 60px;
 }
-.like-section .bottom-part .reacts span{
-    padding-left: 5px;
-}
-.like-section .bottom-part .comments{
-    display: flex;
-    padding: 10px 60px;
-}
-.like-section .bottom-part .comments span{
-    padding-left: 5px;
-}
-.like-section .bottom-part .shares{
-    display: flex;
-    padding: 10px 60px;
-}
-.like-section .bottom-part .shares span{
+.bottom-part div span {
     padding-left: 5px;
 }
 
