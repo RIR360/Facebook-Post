@@ -107,8 +107,18 @@ body {
     display: flex;
     flex-direction: row;
 }
+/* .like-section .top-part .left-part{
+    display: flex;
+} */
+.like-section .top-part .right-part{
+    padding-right: 10px;
+}
 .like-section .top-part .id-name{
     padding-left: 10px;
+}
+.like-section .top-part .react img{
+    height: 20px;
+    width: 20px;
 }
 .like-section .bottom-part{
     margin: 10px 0;
@@ -136,10 +146,5 @@ body {
 }
 .like-section .bottom-part .shares span{
     padding-left: 5px;
-}
-
-.comment-s {
-    background: blue;
-    height: 60px;
 }
 /*write comment section styles here*/
