@@ -82,34 +82,54 @@ body {
 
 /*write like section styles here*/
 .like-section{
-    margin-top: 10px;
-}
-.like-s-top{
     display: flex;
+    flex-direction: column;
 }
-.react-names {
+.like-section .top-part{
     display: flex;
-    align-items: center;
+    flex-direction: row;
+}
+/* .like-section .top-part .left-part{
+    display: flex;
+} */
+.like-section .top-part .right-part{
+    padding-right: 10px;
+}
+.like-section .top-part .id-name{
     padding-left: 10px;
-    font-size: 14px;
 }
-.bottom-part {
+.like-section .top-part .react{
+    margin: auto 0;
+}
+.like-section .top-part .react img{
+    height: 20px;
+    width: 20px;
+}
+.like-section .bottom-part{
     margin: 10px 0;
     display: flex;
     border-top: 1px solid var(--border-light);
     border-bottom: 1px solid var(--border-light);
 }
-.bottom-part div {
-    cursor: pointer;
+.like-section .bottom-part .reacts{
     display: flex;
     padding: 10px 60px;
 }
-.bottom-part div span {
+.like-section .bottom-part .reacts span{
     padding-left: 5px;
 }
-
-.comment-s {
-    background: blue;
-    height: 60px;
+.like-section .bottom-part .comments{
+    display: flex;
+    padding: 10px 60px;
+}
+.like-section .bottom-part .comments span{
+    padding-left: 5px;
+}
+.like-section .bottom-part .shares{
+    display: flex;
+    padding: 10px 60px;
+}
+.like-section .bottom-part .shares span{
+    padding-left: 5px;
 }
 /*write comment section styles here*/
