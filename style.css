@@ -84,8 +84,6 @@ body {
 .like-section{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 10px;
 }
 .like-section .top-part{
     display: flex;
@@ -99,6 +97,9 @@ body {
 }
 .like-section .top-part .id-name{
     padding-left: 10px;
+}
+.like-section .top-part .react{
+    margin: auto 0;
 }
 .like-section .top-part .react img{
     height: 20px;
