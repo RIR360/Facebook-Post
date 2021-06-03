@@ -53,7 +53,6 @@ body {
     border: 1px solid black;
     position: absolute;
     left: 10px;
-    top: 20px;
 }
 .profile-picture img{
     border-radius: 50%;
