@@ -75,7 +75,7 @@ body {
     margin-left: auto;
 }
 .top-options button{
-    width: 30px;
+    width: 18px;
     border: none;
     background: none;
 }
@@ -83,7 +83,7 @@ body {
     cursor: pointer;
 }
 .post-content {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /*write like section styles here*/
@@ -99,9 +99,12 @@ body {
     padding-right: 10px;
 }
 .like-section .top-part .id-name{
+    display: flex;
     padding-left: 10px;
+    align-items: center;
 }
 .like-section .top-part .id-name p{
+    font-size: 16px;
     margin: 0;
 }
 .like-section .top-part .react img{
