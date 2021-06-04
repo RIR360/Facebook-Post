@@ -204,15 +204,15 @@ body {
 }
 
 .icon-comment{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     padding: 4px;
     color: black;
     border: 1px solid white;
     border-radius: 50%;
     border: none;
     position: relative;
-    right: 165px;
+    right: 158px;
     text-align: left;
     cursor: pointer;
     margin: 15px 2.5px 0 2.5px;
