@@ -5,8 +5,14 @@
     --text-light : #878d93;
     --border-light: #a4b0be;
 }
-body {
+*,
+*::before,
+*::after{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
     color: var(--text-dark);
     font-family: sans-serif;
     font-size: 18px;
@@ -89,21 +95,30 @@ body {
     display: flex;
     flex-direction: row;
 }
-/* .like-section .top-part .left-part{
-    display: flex;
-} */
 .like-section .top-part .right-part{
     padding-right: 10px;
 }
 .like-section .top-part .id-name{
     padding-left: 10px;
 }
-.like-section .top-part .react{
-    margin: auto 0;
+.like-section .top-part .id-name p{
+    margin: 0;
 }
 .like-section .top-part .react img{
     height: 20px;
     width: 20px;
+}
+.like-section .top-part .react img:nth-child(1){
+    margin-right: -7px;
+    
+}
+.like-section .top-part .react img:nth-child(2){
+    margin-right: -7px;
+    z-index: 5;
+}
+.like-section .top-part .react img:nth-child(3){
+    margin-right: 0px;
+    z-index: 1;
 }
 .like-section .bottom-part{
     margin: 10px 0;
@@ -114,6 +129,9 @@ body {
 .like-section .bottom-part .reacts{
     display: flex;
     padding: 10px 60px;
+}
+.like-section .bottom-part .reacts img{
+    color: dodgerblue;
 }
 .like-section .bottom-part .reacts span{
     padding-left: 5px;
@@ -154,6 +172,8 @@ body {
     -webkit-border-radius: 28px;
     -moz-border-radius: 28px;
     border-radius: 28px;
+    background: #F0F2F5;
+    border: none;
     height: 40px;
     width: 550px;
     text-decoration: none;
@@ -183,5 +203,5 @@ body {
 }
 
 .icon-comment:hover{
-    background-color: var(--border-light);
+    background-color: rgba(0, 0, 0, 0.1);
 }
