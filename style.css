@@ -161,8 +161,6 @@ body {
     margin: 10px 15px 0 5px;
     padding: 5px 150px 5px 15px;
     font-size: 20px;
-    /*box-sizing: border-box!important;*/
-    /*color: #657D81;*/
     text-decoration: none;
     background-color: #F0F2F5;
     color: #3A2605;
@@ -180,8 +178,6 @@ body {
     color: #8A8D91;
 }
 
-/*.comment-input-area input::*/
-
 .comment-icon{
     display: flex;
 }
@@ -193,7 +189,6 @@ body {
     color: black;
     border: 1px solid white;
     border-radius: 50%;
-    /*background-color: white;*/
     border: none;
     position: relative;
     right: 165px;
