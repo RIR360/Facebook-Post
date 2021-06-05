@@ -1,6 +1,6 @@
 Work is in progress...
 # Functional Facebook Post
-Facebook post remake with HTML, CSS, and JS. Functional and responsive.
+Facebook post remake with HTML, CSS, and JS. Functional.
 
 ## Concept Pictures below
 
