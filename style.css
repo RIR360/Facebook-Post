@@ -86,6 +86,83 @@ body {
     margin-bottom: 20px;
 }
 
+/*Option section*/
+.option{
+    padding: 10px 25px;
+    position: absolute;
+    top: 35px;
+    right: -30px;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+    -webkit-box-shadow: 0px 0px 20px -7px rgba(24,23,23,0.41); 
+box-shadow: 0px 0px 20px -7px rgba(24,23,23,0.41);
+}
+
+
+.container{
+    width: 340px;
+    height: 340px;
+    position: relative;
+    padding: 10px 10px;
+    border-radius:7px ;
+    background: white; 
+    -webkit-box-shadow: 0px 0px 20px -7px rgba(24,23,23,0.41); 
+    box-shadow: 0px 0px 20px -7px rgba(24,23,23,0.41);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.option_active{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.container ul li{
+padding: 5px;
+margin-top:5px;
+list-style: none;
+}
+.container ul li img{
+    height: 20px;
+    width: 20px;
+}
+.container ul li:hover{
+    background: var(--seco-color);
+    cursor: pointer;
+}
+.container .icon{
+    position: absolute;
+    left: 18px;
+}
+.container .option-title{
+    margin-left: 35px;
+
+}
+
+.container p{
+    font-size: 13px;
+   
+}
+
+#turn_of_post{
+    height: 45px;
+    border-top: 1px  solid black;
+    border-bottom: 1px  solid black;
+}
+
+
+/*Option section*/
+
+
 /*write like section styles here*/
 .like-section{
     display: flex;
