@@ -88,11 +88,9 @@ body {
 
 /*Option section*/
 
-.option{
-    padding: 10px 25px;
+#option{
     position: absolute;
-    top: 35px;
-    right: -30px;
+    top: 50px;
     z-index: 99;
     visibility: hidden;
 }
@@ -118,14 +116,10 @@ body {
     -webkit-box-shadow: 0px 0px 20px -7px rgba(24,23,23,0.41); 
     box-shadow: 0px 0px 20px -7px rgba(24,23,23,0.41);
 }
-.option_active{
-    visibility: visible;
-    opacity: 1;
-}
 .container ul li{
-padding: 5px;
-margin-top:5px;
-list-style: none;
+    padding: 5px;
+    margin-top:5px;
+    list-style: none;
 }
 .container ul li img{
     height: 20px;
@@ -146,6 +140,8 @@ list-style: none;
     font-size: 13px;
 }
 .turn_off_post{
+    display : flex;
+    align-items: center;
     height: 45px;
     border-top: 1px  solid black;
     border-bottom: 1px  solid black;
