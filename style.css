@@ -94,6 +94,7 @@ body {
     top: 35px;
     right: -30px;
     z-index: 99;
+    visibility: hidden;
 }
 .container{
     width: 340px;
