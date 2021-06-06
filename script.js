@@ -30,7 +30,7 @@ function toggle_option(button)
 	{
 		menu.style.visibility = "visible";
 		menu.style.top =  getOffset(button).top + 50 + "px";
-		menu.style.left = getOffset(button).left - 310 + "px";
+		menu.style.left = getOffset(button).left - 315 + "px";
 	}
 }
 

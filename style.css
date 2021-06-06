@@ -301,12 +301,13 @@ body {
 
 .all-comments{
     margin-right: 6px;
+    display: flex;
+    cursor: pointer;
 }
 
-.all-comments h4{
+.all-comments p{
     color: #1D1F23;
-    float: right;
-    font-size: 50x;
+    margin-left: auto;
 }
 
 .all-comments-h4-i{
