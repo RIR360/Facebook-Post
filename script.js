@@ -53,3 +53,16 @@ window.addEventListener('load', function() {
 	});
 	*/
 });
+
+
+var emojies = document.getElementById("emojies");
+var like = document.getElementById("like");
+
+like.addEventListener("mouseover", (e) => {
+	var emojies = document.getElementById("emojies");
+	emojies.style.visibility = 'visible';
+})
+like.addEventListener("mouseout", (e) => {
+	var emojies = document.getElementById("emojies");
+	emojies.style.visibility = 'hidden';
+})

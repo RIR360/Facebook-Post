@@ -152,22 +152,26 @@ body {
 .like-section{
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .like-section .top-part{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+.like-section .top-part .left-part{
+    display: flex;
 }
 .like-section .top-part .right-part{
     padding-right: 10px;
+    display: flex;
+}
+.like-section .top-part .right-part * {
+    padding: 0 3px;
 }
 .like-section .top-part .id-name{
-    display: flex;
     padding-left: 10px;
-    align-items: center;
-}
-.like-section .top-part .id-name p{
-    font-size: 16px;
-    margin: 0;
 }
 .like-section .top-part .react img{
     height: 20px;
@@ -175,7 +179,6 @@ body {
 }
 .like-section .top-part .react img:nth-child(1){
     margin-right: -7px;
-    
 }
 .like-section .top-part .react img:nth-child(2){
     margin-right: -7px;
@@ -195,9 +198,6 @@ body {
     display: flex;
     padding: 10px 60px;
 }
-.like-section .bottom-part .reacts img{
-    color: dodgerblue;
-}
 .like-section .bottom-part .reacts span{
     padding-left: 5px;
 }
@@ -214,6 +214,41 @@ body {
 }
 .like-section .bottom-part .shares span{
     padding-left: 5px;
+}
+span{
+    font-size: 18px;
+    font-weight: bold;
+}
+.like-section .reaction{
+    position: relative;
+    /* display: none; */
+    visibility: hidden;
+    transition: all .5s;
+}
+.like-section .reaction .row{
+    position: absolute;
+    height: 43px;
+    width: 313px;
+    margin-top: -2.4rem;
+    background: var(--prim-color);
+    border: 1px solid rgb(221, 221, 221);
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+}
+.like-section .reaction .row:hover{
+    display: block;
+    visibility: visible;
+}
+.like-section .reaction .row * {
+    height: 40px;
+    padding: 3px;
+    margin: 0 auto;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+.like-section .reaction .row *:hover{
+    transform: scale(1.5);
 }
 /*write comment section styles here*/
 .comment-area{
