@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  
+
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="function Facebook Post">
@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Facebook Posts</title>
 </head>
-  
+
 <body>
 
   <div id="mother">
@@ -138,16 +138,16 @@
         </div>
         <div class="bottom-part">
           <div class="reacts" id="like">
-              <img src="./svg/thumbs-up.svg" alt="">
-              <span>Like</span>
+            <img src="./svg/thumbs-up.svg" alt="">
+            <span>Like</span>
           </div>
           <div class="comments">
-              <img src="./svg/message-square.svg" alt="">
-              <span>Comment</span>
+            <img src="./svg/message-square.svg" alt="">
+            <span>Comment</span>
           </div>
           <div class="shares">
-              <img src="./svg/share-2.svg" alt="">
-              <span>Share</span>
+            <img src="./svg/share-2.svg" alt="">
+            <span>Share</span>
           </div>
         </div>
       </div>
@@ -156,29 +156,10 @@
         <h4>All comments <img src="svg/sort-down.svg" class="all-comments-h4-i" alt=""></h4>
       </div>
 
-      <div class="comment-box">
-        <!-- Design sample comments here -->
-        <div class="comment-container">
-          <div class="comment">
-            <img src="assets/profile-pic.jpg" alt="" class="comment-img">
-            <div class="comment-text">
-              <div class="comment-header">
-                <p><strong>Rejwan Islam Rizvy</strong></p>
-              </div>
-              <p>printf("I am feeling great today!");</p>
-            </div>
-            <div class="three-dot">
-              <img src="svg/three_dot_gray.svg" class="three-dot-img" alt="">
-            </div>
-            </div>
-            <div class="comment-lks">
-              <p><span>Like</span><span class="dot"> . </span><span>Reply</span><span class="dot"> . </span><span>Share</span><span class="dot"> . </span><span>3 m</span></p>
-            </div>
-        </div>
-      </div>
 
-      <div class="comment-box">
-        <!-- Design sample comments here -->
+
+      <div class="comment-box" id = "cb-0">
+        
         <div class="comment-container">
           <div class="comment">
             <img src="assets/maruf.jpg" alt="" class="comment-img">
@@ -191,15 +172,16 @@
             <div class="three-dot">
               <img src="svg/three_dot_gray.svg" class="three-dot-img" alt="">
             </div>
-            </div>
-            <div class="comment-lks">
-              <p><span>Like</span><span class="dot"> . </span><span>Reply</span><span class="dot"> . </span><span>Share</span><span class="dot"> . </span><span>2 m</span></p>
-            </div>
+          </div>
+          <div class="comment-lks">
+            <p>
+              <span>Like</span><span class="dot"> . </span>
+              <span>Reply</span><span class="dot"> . </span>
+              <span>Share</span><span class="dot"> . </span>
+              <span>2 m</span></p>
+          </div>
         </div>
-      </div>
 
-      <div class="comment-box">
-        <!-- Design sample comments here -->
         <div class="comment-container">
           <div class="comment">
             <img src="assets/soikat.jpg" alt="" class="comment-img">
@@ -212,15 +194,13 @@
             <div class="three-dot">
               <img src="svg/three_dot_gray.svg" class="three-dot-img" alt="">
             </div>
-            </div>
-            <div class="comment-lks">
-              <p><span>Like</span><span class="dot"> . </span><span>Reply</span><span class="dot"> . </span><span>Share</span><span class="dot"> . </span><span>1 m</span></p>
-            </div>
+          </div>
+          <div class="comment-lks">
+            <p><span>Like</span><span class="dot"> . </span><span>Reply</span><span class="dot"> .
+              </span><span>Share</span><span class="dot"> . </span><span>1 m</span></p>
+          </div>
         </div>
-      </div>
 
-      <div class="comment-box">
-        <!-- Design sample comments here -->
         <div class="comment-container">
           <div class="comment">
             <img src="assets/saadman.jpg" alt="" class="comment-img">
@@ -233,10 +213,11 @@
             <div class="three-dot">
               <img src="svg/three_dot_gray.svg" class="three-dot-img" alt="">
             </div>
-            </div>
-            <div class="comment-lks">
-              <p><span>Like</span><span class="dot"> . </span><span>Reply</span><span class="dot"> . </span><span>Share</span><span class="dot"> . </span><span>just now</span></p>
-            </div>
+          </div>
+          <div class="comment-lks">
+            <p><span>Like</span><span class="dot"> . </span><span>Reply</span><span class="dot"> .
+              </span><span>Share</span><span class="dot"> . </span><span>just now</span></p>
+          </div>
         </div>
       </div>
 
@@ -247,7 +228,7 @@
             <img src="assets/profile-pic.jpg" alt="user" class="comment-profile-pic-img">
           </div>
           <div class="comment-input-area">
-            <input type="text" placeholder="Write a comment...">
+            <input type="text" placeholder="Write a comment..." comment-id = "0">
           </div>
           <div class="comment-icon">
             <div class="icon-comment"><img src="svg/smile-1.svg" alt=""></div>
@@ -258,11 +239,7 @@
         </div>
       </div>
 
-      
-
-      
     </div>
-
   </div>
 
   <script src="script.js"></script>

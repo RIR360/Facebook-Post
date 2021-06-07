@@ -215,15 +215,11 @@ body {
 .like-section .bottom-part .shares span{
     padding-left: 5px;
 }
-span{
-    font-size: 18px;
-    font-weight: bold;
-}
 .like-section .reaction{
     position: relative;
     /* display: none; */
     visibility: hidden;
-    transition: all .5s;
+    transition: all 1s;
 }
 .like-section .reaction .row{
     position: absolute;
@@ -336,6 +332,7 @@ span{
 
 .all-comments{
     margin-right: 7px;
+    cursor: pointer;
 }
 
 .all-comments h4{
@@ -364,17 +361,16 @@ span{
     max-width: 500px;
 }
 
-.comment-header p{
+.comment-header p {
     font-size: 16px;
     padding-bottom: 6px;
 }
 
-.comment-lks{
-    padding-left: 60px;
-    font-size: 15px;
-    color: rgb(101, 103, 107);
-    font-family: Helvetica, Arial, sans-serif;
+.comment-lks {
+    font-size: 14px;
     font-weight: bold;
+    padding-left: 60px;
+    color: rgb(101, 103, 107);
 }
 
 .comment-lks span{
