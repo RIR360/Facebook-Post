@@ -3,15 +3,18 @@ function qs(elem) {return document.querySelector(elem);}
 function qsa(elem) {return document.querySelectorAll(elem);}
 
 // globals
-var
-menu_open = 0;
+hovered_btn_id = 0;
 
 // elements
 const
 opt_btns = qsa(".top-options button"),
 menu = qs("#option"),
+emoji_panel = qs("#emojies"),
 comment_inputs = qsa(".comment-input-area input"),
-comment_boxs = qsa(".comment-box");
+comment_boxs = qsa(".comment-box"),
+comment_btns = qsa(".comment-btn"),
+like_btns = qsa(".like-btn"),
+emojies = qsa("#emojies img");
 
 // functions
 function getOffset(el) {
@@ -26,7 +29,6 @@ function toggle_option(button)
 	if (menu.style.visibility == "visible")
 	{
 		menu.style.visibility = "hidden";
-		menu.classList.remove("option_active");
 	}
 	else
 	{
@@ -35,8 +37,63 @@ function toggle_option(button)
 		menu.style.left = getOffset(button).left - 315 + "px";
 	}
 }
+function toggle_reaction(button)
+{
+	if (emoji_panel.style.visibility == "visible")
+	{
+		emoji_panel.style.visibility = "hidden";
+	}
+	else
+	{
+		emoji_panel.style.visibility = "visible";
+		emoji_panel.style.top =  getOffset(button).top - 50 + "px";
+		emoji_panel.style.left = getOffset(button).left - 50 + "px";
+	}
+}
+function placeLIke(emoji, id) {
+	
+	var emoji_src, btn_text;
+	
+	switch (emoji) {
+		case "e-like":
+			emoji_src = "./svg/like.svg";
+			btn_text = "Like";
+			break;
+		case "e-love":
+			emoji_src = "./svg/love.svg";
+			btn_text = "Love";
+			break;
+		case "e-care":
+			emoji_src = "./svg/care.svg";
+			btn_text = "Care";
+			break;
+		case "e-haha":
+			emoji_src = "./svg/haha.svg";
+			btn_text = "haha";
+			break;
+		case "e-wow":
+			emoji_src = "./svg/wow.svg";
+			btn_text = "Wow";
+			break;
+		case "e-sad":
+			emoji_src = "./svg/sad.svg";
+			btn_text = "Sad";
+			break;
+		case "e-angry":
+			emoji_src = "./svg/angry.svg";
+			btn_text = "Angry";
+			break;
+		default:
+			return;
+	}
+	
+	qs("#fpost" + id).querySelector(".like-btn img").src = emoji_src;
+	qs("#fpost" + id).querySelector(".like-btn img").style.width = "20px";
+	qs("#fpost" + id).querySelector(".like-btn span").innerHTML = btn_text;
+}
 function makeComment(text, id) {
-	qs("#cb-" + id).innerHTML += 
+
+	qs("#fpost" + id).querySelector(".comment-box").innerHTML += 
 	`
 	<div class="comment-container">
 		<div class="comment">
@@ -65,8 +122,12 @@ function makeComment(text, id) {
 //******************
 // Main Function here
 //******************
+
 window.addEventListener('load', function() {
-	// write your main events here...
+
+	qs("#mother").style.display = "block";
+	qs("#js-error").style.display = "none";
+	
 	opt_btns.forEach(btn => {
 		btn.addEventListener("click", (e)=>{
 			toggle_option(btn);
@@ -74,21 +135,30 @@ window.addEventListener('load', function() {
 	});
 	comment_inputs.forEach(input => {
 		input.addEventListener("change", (e)=>{
-			makeComment(input.value, input.getAttribute("comment-id"));
+			makeComment(input.value, input.getAttribute("fpost"));
 			input.value = "";
 		});
 	});
+	comment_btns.forEach(button => {
+		button.addEventListener("click", (e)=>{
+			qs("#fpost" + button.getAttribute("fpost")).querySelector("input").focus();
+		});
+	});
+	like_btns.forEach(button => {
+		button.addEventListener("mouseover", (e)=>{
+			hovered_btn_id = button.getAttribute("fpost");
+			toggle_reaction(button);
+		});
+		button.addEventListener("mouseout", (e)=>{
+			toggle_reaction(button);
+		});
+		button.addEventListener("click", (e)=>{
+			placeLIke("e-like", hovered_btn_id);
+		});
+	});
+	emojies.forEach(emoji => {
+		emoji.addEventListener("click", (e)=>{
+			placeLIke(emoji.getAttribute("id"), hovered_btn_id);
+		});
+	});
 });
-
-
-var emojies = document.getElementById("emojies");
-var like = document.getElementById("like");
-
-like.addEventListener("mouseover", (e) => {
-	var emojies = document.getElementById("emojies");
-	emojies.style.visibility = 'visible';
-})
-like.addEventListener("mouseout", (e) => {
-	var emojies = document.getElementById("emojies");
-	emojies.style.visibility = 'hidden';
-})

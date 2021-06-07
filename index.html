@@ -12,6 +12,8 @@
 
 <body>
 
+  <h2 id="js-error" style="padding: 20px;">Loading...</h2>
+
   <div id="mother">
 
     <div id="option">
@@ -50,8 +52,23 @@
       </div>
     </div>
 
-    <div class="fb-post">
+    <div class="reaction" id="emojies">
+      <div class="row">
+        <img id="e-like" src="./svg/like.svg" alt="">
+        <img id="e-love" src="./svg/love.svg" alt="">
+        <img id="e-care" src="./svg/care.svg" alt="">
+        <img id="e-haha" src="./svg/haha.svg" alt="">
+        <img id="e-wow" src="./svg/wow.svg" alt="">
+        <img id="e-sad" src="./svg/sad.svg" alt="">
+        <img id="e-angry" src="./svg/angry.svg" alt="">
+      </div>
+    </div>
+
+    
+    <div class="fb-post" id="fpost0">
+
       <!-- Top Section -->
+
       <div class="top-s">
         <div class="top-info">
           <div class="profile-picture">
@@ -72,42 +89,15 @@
             </button>
           </div>
         </div>
-
         <div class="post-content">
           <strong>Facebook Post</strong><br />
           Hello world <br />
           I'm feeling great today!
         </div>
-
       </div>
 
-      <!-- Like Section Start -->
-      <!-- <div class="like-section">
-        <div class="top-part">
-          <div class="react">
-            <img src="./svg/love.svg" alt="">
-            <img src="./svg/care.svg" alt="">
-            <img src="./svg/like.svg" alt="">
-          </div>
-          <div class="id-name">
-            <p>You, Rejwan Islam Rizvy, Saadman and <span>6</span> others</p>
-          </div>
-        </div>
-        <div class="bottom-part">
-          <div class="reacts">
-            <img src="./svg/thumbs-up.svg" alt="">
-            <span>Like</span>
-          </div>
-          <div class="comments">
-            <img src="./svg/message-square.svg" alt="">
-            <span>Comment</span>
-          </div>
-          <div class="shares">
-            <img src="./svg/share-2.svg" alt="">
-            <span>Share</span>
-          </div>
-        </div>
-      </div> -->
+      <!-- Like section -->
+
       <div class="like-section">
         <div class="top-part">
           <div class="left-part">
@@ -121,45 +111,32 @@
             </div>
           </div>
           <div class="right-part">
-            <p><span>13</span>Comments</p>
-            <p><span>14</span>Shares</p>
-          </div>
-        </div>
-        <div class="reaction" id="emojies">
-          <div class="row">
-            <img src="./svg/like.svg" alt="">
-            <img src="./svg/love.svg" alt="">
-            <img src="./svg/care.svg" alt="">
-            <img src="./svg/haha.svg" alt="">
-            <img src="./svg/wow.svg" alt="">
-            <img src="./svg/sad.svg" alt="">
-            <img src="./svg/angry.svg" alt="">
+            <p><span>1</span>Comments</p>
           </div>
         </div>
         <div class="bottom-part">
-          <div class="reacts" id="like">
+          <div class="like-btn" fpost="0">
             <img src="./svg/thumbs-up.svg" alt="">
             <span>Like</span>
           </div>
-          <div class="comments">
+          <div class="comment-btn" fpost="0">
             <img src="./svg/message-square.svg" alt="">
             <span>Comment</span>
           </div>
-          <div class="shares">
+          <div class="share-btn">
             <img src="./svg/share-2.svg" alt="">
             <span>Share</span>
           </div>
         </div>
       </div>
-      <!-- comments -->
+
+      <!-- Comment section-->
+
       <div class="all-comments">
         <h4>All comments <img src="svg/sort-down.svg" class="all-comments-h4-i" alt=""></h4>
       </div>
 
-
-
-      <div class="comment-box" id = "cb-0">
-        
+      <div class="comment-box">
         <div class="comment-container">
           <div class="comment">
             <img src="assets/maruf.jpg" alt="" class="comment-img">
@@ -178,57 +155,18 @@
               <span>Like</span><span class="dot"> . </span>
               <span>Reply</span><span class="dot"> . </span>
               <span>Share</span><span class="dot"> . </span>
-              <span>2 m</span></p>
-          </div>
-        </div>
-
-        <div class="comment-container">
-          <div class="comment">
-            <img src="assets/soikat.jpg" alt="" class="comment-img">
-            <div class="comment-text">
-              <div class="comment-header">
-                <p><strong>Soikat Khan</strong></p>
-              </div>
-              <p>echo "I am feeling great today!";</p>
-            </div>
-            <div class="three-dot">
-              <img src="svg/three_dot_gray.svg" class="three-dot-img" alt="">
-            </div>
-          </div>
-          <div class="comment-lks">
-            <p><span>Like</span><span class="dot"> . </span><span>Reply</span><span class="dot"> .
-              </span><span>Share</span><span class="dot"> . </span><span>1 m</span></p>
-          </div>
-        </div>
-
-        <div class="comment-container">
-          <div class="comment">
-            <img src="assets/saadman.jpg" alt="" class="comment-img">
-            <div class="comment-text">
-              <div class="comment-header">
-                <p><strong>Md. Saadman Galib</strong></p>
-              </div>
-              <p>print("I am feeling great today!")</p>
-            </div>
-            <div class="three-dot">
-              <img src="svg/three_dot_gray.svg" class="three-dot-img" alt="">
-            </div>
-          </div>
-          <div class="comment-lks">
-            <p><span>Like</span><span class="dot"> . </span><span>Reply</span><span class="dot"> .
-              </span><span>Share</span><span class="dot"> . </span><span>just now</span></p>
+              <span>2 m</span>
+            </p>
           </div>
         </div>
       </div>
-
-      <!--Comment section-->
       <div class="comment-s">
         <div class="comment-area">
           <div class="comment-profile-pic">
             <img src="assets/profile-pic.jpg" alt="user" class="comment-profile-pic-img">
           </div>
           <div class="comment-input-area">
-            <input type="text" placeholder="Write a comment..." comment-id = "0">
+            <input type="text" placeholder="Write a comment..." fpost="0">
           </div>
           <div class="comment-icon">
             <div class="icon-comment"><img src="svg/smile-1.svg" alt=""></div>
@@ -240,8 +178,123 @@
       </div>
 
     </div>
-  </div>
 
+
+
+
+    <div class="fb-post" id="fpost1">
+
+      <!-- Top Section -->
+
+      <div class="top-s">
+        <div class="top-info">
+          <div class="profile-picture">
+            <img src="./assets/maruf.jpg">
+          </div>
+          <div class="top-title">
+            <div class="profile-name">
+              <a href="#">Abdullah Al Maruf</a>
+            </div>
+            <div class="post-time">
+              <span>1h ago - </span>
+              <img src="./svg/lock.svg">
+            </div>
+          </div>
+          <div class="top-options">
+            <button>
+              <img src="./svg/three_dot.svg">
+            </button>
+          </div>
+        </div>
+        <div class="post-content">
+          I'm feeling so lucky!
+        </div>
+      </div>
+
+      <!-- Like section -->
+
+      <div class="like-section">
+        <div class="top-part">
+          <div class="left-part">
+            <div class="react">
+              <img src="./svg/love.svg" alt="">
+              <img src="./svg/care.svg" alt="">
+              <img src="./svg/like.svg" alt="">
+            </div>
+            <div class="id-name">
+              <p>You, Saadman and <span>2</span> others</p>
+            </div>
+          </div>
+          <div class="right-part">
+            <p><span>1</span>Comments</p>
+          </div>
+        </div>
+        <div class="bottom-part">
+          <div class="like-btn" fpost="1">
+            <img src="./svg/thumbs-up.svg" alt="">
+            <span>Like</span>
+          </div>
+          <div class="comment-btn" fpost="1">
+            <img src="./svg/message-square.svg" alt="">
+            <span>Comment</span>
+          </div>
+          <div class="share-btn">
+            <img src="./svg/share-2.svg" alt="">
+            <span>Share</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comment section-->
+
+      <div class="all-comments">
+        <h4>All comments <img src="svg/sort-down.svg" class="all-comments-h4-i" alt=""></h4>
+      </div>
+
+      <div class="comment-box">
+        <div class="comment-container">
+          <div class="comment">
+            <img src="assets/profile-pic.jpg" alt="" class="comment-img">
+            <div class="comment-text">
+              <div class="comment-header">
+                <p><strong>Rejwan Islam Rizvy</strong></p>
+              </div>
+              <p>That's really nice.</p>
+            </div>
+            <div class="three-dot">
+              <img src="svg/three_dot_gray.svg" class="three-dot-img" alt="">
+            </div>
+          </div>
+          <div class="comment-lks">
+            <p>
+              <span>Like</span><span class="dot"> . </span>
+              <span>Reply</span><span class="dot"> . </span>
+              <span>Share</span><span class="dot"> . </span>
+              <span>2 m</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="comment-s">
+        <div class="comment-area">
+          <div class="comment-profile-pic">
+            <img src="assets/profile-pic.jpg" alt="user" class="comment-profile-pic-img">
+          </div>
+          <div class="comment-input-area">
+            <input type="text" placeholder="Write a comment..." fpost="1">
+          </div>
+          <div class="comment-icon">
+            <div class="icon-comment"><img src="svg/smile-1.svg" alt=""></div>
+            <div class="icon-comment"><img src="svg/camera.svg" alt=""></div>
+            <div class="icon-comment"><img src="svg/gif%20(1).svg" alt=""></div>
+            <div class="icon-comment"><img src="svg/circular-sticker.svg" alt=""></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+  </div>
   <script src="script.js"></script>
 </body>
 

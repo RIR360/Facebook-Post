@@ -21,6 +21,7 @@ body {
 #mother {
     width: 100%;
     padding: 50px 0;
+    display: none;
 }
 .fb-post {
     width: 640px;
@@ -28,7 +29,7 @@ body {
     padding: 10px 15px;
     margin: 0 auto;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     flex-direction: column;
     background: var(--prim-color);
     box-sizing: border-box;
@@ -152,7 +153,6 @@ body {
 .like-section{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
     margin-bottom: 10px;
 }
 .like-section .top-part{
@@ -189,40 +189,29 @@ body {
     z-index: 1;
 }
 .like-section .bottom-part{
-    margin: 10px 0;
     display: flex;
+    margin: 10px 0;
     border-top: 1px solid var(--border-light);
     border-bottom: 1px solid var(--border-light);
 }
-.like-section .bottom-part .reacts{
+.bottom-part div {
     display: flex;
+    align-items: center;
     padding: 10px 60px;
+    cursor: pointer;
+    border-radius: 10px;
 }
-.like-section .bottom-part .reacts span{
+.bottom-part div:hover {
+    background: rgb(245, 245, 245);
+}
+.bottom-part span {
     padding-left: 5px;
 }
-.like-section .bottom-part .comments{
-    display: flex;
-    padding: 10px 60px;
-}
-.like-section .bottom-part .comments span{
-    padding-left: 5px;
-}
-.like-section .bottom-part .shares{
-    display: flex;
-    padding: 10px 60px;
-}
-.like-section .bottom-part .shares span{
-    padding-left: 5px;
-}
-.like-section .reaction{
+.reaction{
     position: relative;
-    /* display: none; */
     visibility: hidden;
-    transition: all 1s;
 }
-.like-section .reaction .row{
-    position: absolute;
+.reaction .row{
     height: 43px;
     width: 313px;
     margin-top: -2.4rem;
@@ -232,20 +221,22 @@ body {
     flex-direction: row;
     border-radius: 20px;
 }
-.like-section .reaction .row:hover{
+.reaction .row:hover {
     display: block;
     visibility: visible;
 }
-.like-section .reaction .row * {
+.reaction .row img{
     height: 40px;
     padding: 3px;
     margin: 0 auto;
     transform: scale(1);
-    transition: all 0.3s;
+    cursor: pointer;
 }
-.like-section .reaction .row *:hover{
+.reaction .row img:hover{
     transform: scale(1.5);
 }
+
+
 /*write comment section styles here*/
 .comment-area{
     display: flex;
@@ -276,8 +267,8 @@ body {
     padding: 5px 150px 5px 15px;
     font-size: 20px;
     text-decoration: none;
-    background-color: #F0F2F5;
-    color: #3A2605;
+    background-color: var(--seco-color);
+    color: var(--text-dark);
 }
 
 .comment-input-area input:focus{
