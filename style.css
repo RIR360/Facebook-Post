@@ -324,7 +324,7 @@ span{
     padding: 15px;
 }
 
-.comment img{
+.comment-img{
     width: 34px;
     height: 34px;
     border: none;
@@ -335,19 +335,21 @@ span{
 }
 
 .all-comments{
-    margin-right: 6px;
-    display: flex;
-    cursor: pointer;
+    margin-right: 7px;
 }
 
-.all-comments p{
-    color: #1D1F23;
-    margin-left: auto;
+.all-comments h4{
+    color: #1d1f23;
+    float: right;
+    font-size: 50x;
+    font-weight: lighter;
 }
 
 .all-comments-h4-i{
     color: #1D1F23;
-    height: 15px;
+    position: relative;
+    top: 2px;
+    height: 10px;
 }
 
 .comment{
@@ -396,15 +398,17 @@ span{
 }
 
 .three-dot{
-    color: rgb(101, 103, 107);
     display: flex;
     align-items: center;
-    padding-left: 8px;
-    font-size: 17px;
-    display: none;
-    cursor: pointer
 }
 
-.comment:hover .three-dot{
+.three-dot-img{
+    padding-left: 8px;
+    height: 17px;
+    display: none;
+    cursor: pointer;
+}
+
+.comment:hover .three-dot-img{
     display: flex;
 }
