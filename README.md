@@ -2,7 +2,7 @@
 Facebook post remake with HTML, CSS, and JS. No frameworks or dependencies. If you're a new web learner then you must explore this open repository. It's not back-end supported, it can't communicate to any server. It's a nice front-end project you may like!😀
 
 ## Features:
-* Nice and clean UI just like Facebbok
+* Nice and clean UI just like Facebook
 * Functional post menu option button
 * Reactions can be placed on the button
 * Commenting functionality
