@@ -29,6 +29,8 @@ function toggle_option(button)
 	if (menu.style.visibility == "visible")
 	{
 		menu.style.visibility = "hidden";
+		menu.style.top =  "0px";
+		menu.style.left = "0px";
 	}
 	else
 	{
