@@ -1,15 +1,13 @@
-Work is in progress...
 # Functional Facebook Post
-Facebook post remake with HTML, CSS, and JS. Functional.
+Facebook post remake with HTML, CSS, and JS. No frameworks or dependencies. If you're a new web learner then you must explore this open repository. It's not back-end supported, it can't communicate to any server. It's a nice front-end project you may like!😀
 
-## Concept Pictures below
+## Features:
+* Nice and clean UI just like Facebbok
+* Functional post menu option button
+* Reactions can be placed on the button
+* Commenting functionality
+* Multiple Posts
+* Simple design
 
-### Sample Facebook Post (text only)
-![image](https://user-images.githubusercontent.com/50569315/120105901-a0a1dd00-c17c-11eb-9278-2afd95738c61.png)
-
-### Sample Facebook Post (with attachment)
-![image](https://user-images.githubusercontent.com/50569315/120105703-e6aa7100-c17b-11eb-92e4-525c574b1189.png)
-
-### Wireframe preview (Designed by @RIR360)
-![image](https://user-images.githubusercontent.com/50569315/120309244-d539a400-c2f6-11eb-8051-584383747803.png)
-
+## Preview:
+![image](https://user-images.githubusercontent.com/50569315/121119325-3acce980-c83d-11eb-9023-3c66745943cb.png)
